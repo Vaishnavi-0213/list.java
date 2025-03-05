@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://i.pinimg.com/736x/3e/28/2a/3e282ac23b906abfc726df3048940391.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container {
+    background: skyblue;
+    padding: 20px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.task-form button {
+    padding: 8px;
+    font-size: 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-form button:hover {
+    background: #218838;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.task-item button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-item button:hover {
+    background: darkred;
+}
+
+/* Color coding based on priority */
+.low-priority { background: green; }
+.medium-priority { background: orange; }
+.high-priority { background: red; }
